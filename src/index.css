@@ -1,13 +1,131 @@
 body {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f0f0f0;
+  color: #333;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.dark-mode .container {
+  background-color: #444;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.toggle-dark-mode {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ebd2ff;
+  color: rgb(16, 14, 14);
+  cursor: pointer;
+  font-family: "Roboto Mono", monospace;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.task {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.task.completed {
+  background-color: #d4edda;
+  font-family: "Roboto Mono", monospace;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+.task-header .task-text {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Roboto Mono", monospace;
+}
+
+.task-actions {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+.edit-icon,
+.delete-icon {
+  margin-right: 10px;
+}
+
+.task-details {
+  margin-top: 10px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.add-task-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.add-task-form input,
+.add-task-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-task-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #c5a3f9;
+  color: rgb(25, 23, 23);
+  cursor: pointer;
+  font-family: "Roboto Mono", monospace;
+}
+
+.search-task {
+  margin-bottom: 20px;
+}
+
+.search-task input {
+  width: 97%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
