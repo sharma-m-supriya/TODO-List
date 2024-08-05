@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a simple Todo List application built with React (or Next.js). It allows users to create, update, and manage tasks with features like task search and expandable list views. Data is stored in a dummy JSON file.
+This is a simple Todo List application built with React.js. It allows users to create, update, and manage tasks with features like task search and expandable list views. Data is stored in a dummy JSON file.
 
 ## Implementation
 
